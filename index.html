@@ -7,64 +7,101 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+
     <header class="main-header">
         <div class="topbar">
             <p>Voted Best Philadelphia Personal Trainer of 2014 by the Philadelphia Reader!</p>
         </div>
-           
+        
         <nav class="topnav">
             <ul class="topnavbar">
-                <li><img class="logo" src="img/sc-logo.png"></li>
-                <li class="push-right">Home</li>
-                <li>About Me</li>
-                <li>Personal Training</li>
-                <li>Online Coaching</li>
-                <li>Contact</li>
+                <li><a href="#"><img class="logo" src="img/sc-logo.png" alt="Sarah Connor Personal Trainer Logo"></a></li>
+                <li class="push-right"><a href="#">Home</a></li>
+                <li><a href="#">About Me</a></li>
+                <li><a href="#">Personal Training</a></li>
+                <li><a href="#">Online Coaching</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
         </nav>
     </header>
+
     <div class="hero">
-        <img src="img/sc-1.png" alt="Picture of Sarah Connor lifting a barbell from the ground.">
-    </div>
-    <main>
-        <div class="video-header">
-            <p>Can't wait? Watch my low-impact cardio video and get a workout in now!</p>
+        <div class="hero-text">
+            <h1>Philadelphia Personal Training & Online Coaching</h1>
+            <button class="trial-btn">Schedule A Free Trial Session!</button>
         </div>
-        <section class="home-video-section">
-            <iframe width="1000px" height="600px" src="https://www.youtube.com/embed/ImI63BUUPwU?si=fHhQUxdKMiXMN7Ac" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </section>
+    </div>
+
+    <main>
+        <header class="section-header">
+            <h2>The Benefits Of A Personal Trainer</h2>
+        </header>
+
         <section class="trainer-benefits">
             <div class="left-trainer">
-
-            </div>
-            <div class="right-trainer">
+                <h3>Personalized Workout Plans</h3>
+                <p>Personal trainers design customized workout routines tailored to your specific fitness goals, current fitness level, and any limitations or injuries, ensuring the exercises are both effective and safe.</p>
                 
+                <h3>Proper Form and Technique</h3>
+                <p>A personal trainer ensures you perform exercises with the correct form and technique, reducing the risk of injury and maximizing the effectiveness of each movement.</p>
+                
+                <h3>Accountability and Motivation</h3>
+                <p>Working with a personal trainer helps keep you accountable and motivated to stick to your fitness routine, making it less likely that you'll skip workouts or give up on your goals.</p>
+            </div>
+
+            <div class="right-trainer">
+                <h3>Goal Setting and Progress Tracking</h3>
+                <p>Trainers help you set realistic and achievable goals and track your progress over time, providing regular feedback and adjustments to your plan to keep you moving forward.</p>
+
+                <h3>Efficiency and Time Management</h3>
+                <p>A personal trainer designs workouts that maximize your results in the shortest amount of time, making sure you get the most out of each session and helping you stay efficient with your fitness routine.</p>
+
+                <h3>Variety and Creativity in Workouts</h3>
+                <p>Trainers introduce new exercises and techniques to keep your workouts varied and engaging, preventing boredom and helping you avoid hitting a plateau in your fitness journey.</p>
             </div>
         </section>
+
         <section class="fitness-programs">
             <h2>Fitness Programs</h2>
             <div class="programs-container">
                 <div class="program-one">
-
+                    <img src="img/training.jpg" alt="Woman lifting a dumbbell">
+                    <h3>In Home Training</h3>
                 </div>
                 <div class="program-two">
-                    
+                    <img src="img/studio-training-narrow.png" alt="Two women lifting a dumbbell">
+                    <h3>Studio Training</h3>
                 </div>
                 <div class="program-three">
-                    
+                    <img src="img/partner-training-narrow.png" alt="A man and a woman flexing their biceps">
+                    <h3>Partner Training</h3>
                 </div>
                 <div class="program-four">
-                    
+                    <img src="img/online-coaching.jpg" alt="Woman doing pushups">
+                    <h3>Online Training</h3>
                 </div>
             </div>
         </section>
-        <section class="signup-form">
 
+        <header class="section-header">
+            <p>Can't wait? Watch my low-impact cardio video and get a workout in now!</p>
+        </header>
+
+        <section class="home-video-section">
+            <iframe width="1000px" height="600px" src="https://www.youtube.com/embed/ImI63BUUPwU?si=fHhQUxdKMiXMN7Ac" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+
+        <section class="signup-form-container">
+            <form class="signup-form" action="#" method="post">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit" class="signup-btn">Get Weekly Fitness Tips!</button>
+            </form>
         </section>
     </main>
-    <footer class="main-footer">
 
+    <footer class="main-footer">
+        <p>&copy; 2024 Sarah Connor - Personal Trainer. All rights reserved.</p>
     </footer>
+
 </body>
 </html>

@@ -10,6 +10,14 @@ blockquote,q { quotes: none;}
 blockquote:before,blockquote:after,q:before,q:after { content: ''; content: none;}
 table { border-collapse: collapse; border-spacing: 0;}
 
+body {
+    background-color: #EEEEEE;
+}
+
+iframe {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
 .topbar {
     background: #A4A3A3;
     background: -moz-linear-gradient(top, #A4A3A3 0%, #7C7C7C 50%, #353535 100%);
@@ -33,6 +41,11 @@ table { border-collapse: collapse; border-spacing: 0;}
     padding: 0 20rem;
 }
 
+.topnavbar a {
+    text-decoration: none;
+    color: #fff;
+}
+
 .logo {
     width: 250px;
     height: auto;
@@ -42,16 +55,78 @@ table { border-collapse: collapse; border-spacing: 0;}
     margin-left: auto;
 }
 
-.hero img {
-    width: 100%;
-    height: auto;
+.hero {
+    background-image: url(img/sc-1.png);
+    background-size: cover;
+    height: 825px;
+    color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 15px;
 }
 
-.video-header {
+.hero-text {
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 2rem 1rem;
+    width: 500px;
+    position: relative;
+    left: 200px;
+    top: 50px;
+    background-color: rgb(000, 000, 000, .5);
+    border-radius: 8px;
+}
+
+.hero-text h1 {
+    padding-bottom: 1.5rem;
+}
+
+.trial-btn {
+    background-color: red;
+    border: none;
+    color: #fff;
+    font-size: 1.25rem;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.trainer-benefits {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem 10rem;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.trainer-benefits h3 {
+    font-size: 1.5rem;
+    padding-top: 2rem;
+    font-weight: 600;
+}
+
+.trainer-benefits p {
+    font-size: 1.25rem;
+    padding-top: 1rem;
+}
+
+.left-trainer, .right-trainer {
+    padding: 4rem;
+    padding-top: 2rem;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.section-header {
     padding: 0;
 }
 
-.video-header p {
+.section-header h2 {
+    font-size: 2rem;
+    padding: 2rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+.section-header p {
     font-size: 1.5rem;
     padding: 2rem;
     text-align: center;
@@ -61,8 +136,92 @@ table { border-collapse: collapse; border-spacing: 0;}
     background-image: url('https://wallpapercave.com/wp/wp2732950.gif');
     background-size: cover;
     background-color: #000;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 15px;
     text-align: center;
     padding: 4rem;
     color: #fff;
 }
 
+.fitness-programs {
+    padding: 0 10rem;
+}
+
+.programs-container {
+    display: flex;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.programs-container h3 {
+    font-size: 1.5rem;
+    padding: 3rem;
+    text-transform: uppercase;
+}
+
+.fitness-programs h2 {
+    text-align: center;
+    font-size: 2rem;
+    padding: 2rem;
+}
+
+.programs-container img {
+    width: 100%;
+    height: auto;
+}
+
+.program-one, .program-two, .program-three, .program-four {
+    width: 25%;
+    border: #EEEEEE solid 1px;
+}
+
+/* Sign-Up Form Styles */
+.signup-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background-color: #fff;
+
+}
+
+.signup-form {
+    display: flex;
+    gap: 1rem;
+}
+
+.signup-form input[type="email"] {
+    padding: 1rem;
+    font-size: 1rem;
+    border: 1px solid #A4A3A3;
+    border-radius: 8px;
+    width: 300px;
+    outline: none;
+}
+
+.signup-form input[type="email"]:focus {
+    border-color: #7C7C7C;
+}
+
+.signup-btn {
+    background-color: red;
+    border: none;
+    color: #fff;
+    font-size: 1.25rem;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.signup-btn:hover {
+    background-color: darkred;
+}
+
+.main-footer {
+    padding: 2rem;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    font-size: 1.25rem;
+}
