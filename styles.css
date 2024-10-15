@@ -306,7 +306,7 @@ p {
 }
 
 .about-me-text ul li {
-    font-size: 1.1rem;
+    font-size: 1.25rem;
     color: #555;
     margin-bottom: 0.75rem;
 }
@@ -327,4 +327,65 @@ p {
 
 .about-me-text, .about-me-image {
     flex: 1;
+}
+
+/* Training Page */
+
+.training-hero {
+    background:
+    linear-gradient(
+          rgba(0, 0, 0, 0.3), 
+          rgba(0, 0, 0, 0.3)
+        ),
+        url(img/personal-training-hero.png);
+    background-size: cover;
+    height: 700px;
+    color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 15px;
+}
+
+.plans {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 0 2rem;
+}
+
+.training-plan {
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.training-plan h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.training-plan ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.training-plan li {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.training-plan li strong {
+    color: #007bff; /* Highlight important text */
+}
+
+.training-plan ul ul {
+    margin-top: 0.5rem;
+    margin-left: 1.5rem;
+}
+
+.training-plan ul ul li {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    color: #333;
 }
