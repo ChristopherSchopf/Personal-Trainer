@@ -28,11 +28,15 @@ p {
 }
 
 .topbar {
+    width: 100%;
+    position: sticky;
+    top: 0;
     background: linear-gradient(to bottom, #008282, #004747);
     color: #fff;
     text-align: center;
     font-weight: 600;
     font-style: italic;
+    z-index: 1000;
 }
 
 .topbar p {
@@ -49,6 +53,15 @@ p {
     font-size: 1.5rem;
     font-family: "Poppins", sans-serif;
     padding: 0 20rem;
+}
+
+.topnavbar button {
+    background-color: #ED1C24;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: .5rem 1rem;
+    font-size: 1.5rem;
 }
 
 .topnavbar a {
@@ -99,7 +112,7 @@ p {
 }
 
 .trial-btn {
-    background-color: red;
+    background-color: #ED1C24;
     border: none;
     color: #fff;
     font-size: 1.25rem;
@@ -107,30 +120,60 @@ p {
     border-radius: 8px;
 }
 
+.trainer-container {
+    margin: 2rem 14rem;
+    margin-bottom: 0;
+    padding: 3rem 0;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+.trainer-container h2 {
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: .5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.trainer-container h3 {
+    font-size: 1.15rem;
+    text-align: center;
+    color: #555;
+}
+
 .trainer-benefits {
     display: flex;
-    gap: 2rem;
-    padding: 2rem 10rem;
-    padding-top: 0;
-    padding-bottom: 0;
+    gap: 4rem;
+    padding: 0;
 }
 
 .trainer-benefits h3 {
     font-size: 1.5rem;
     padding-top: 2rem;
+    text-align: left;
+    color: #000;
 }
 
 .trainer-benefits p {
-    font-size: 1.25rem;
+    font-size: 1rem;
     padding-top: 1rem;
+    line-height: 1.5rem;
 }
 
 .left-trainer, .right-trainer {
-    padding: 4rem;
+    padding: 6rem;
     padding-top: 2rem;
-    border-radius: 8px;
-    background-color: #fff;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+
+.left-trainer {
+    padding-right: 0;
+}
+
+.right-trainer {
+    padding-left: 0;
 }
 
 .section-header {
@@ -240,7 +283,7 @@ p {
 }
 
 .signup-btn {
-    background-color: red;
+    background-color: #ED1C24;
     border: none;
     color: #fff;
     font-size: 1.25rem;
@@ -250,7 +293,7 @@ p {
     transition: background-color 0.3s ease;
 }
 
-.signup-btn:hover, .trial-btn:hover {
+.signup-btn:hover, .trial-btn:hover, .topnavbar button:hover {
     background-color: darkred;
 }
 
